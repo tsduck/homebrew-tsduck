@@ -25,3 +25,21 @@ Then, you can install TSDuck using:
 ```
 brew install tsduck
 ```
+
+After installation, to upgrade to latest version:
+```
+brew update
+brew upgrade tsduck
+```
+
+When Homebrew upgrades packages, the old versions are not removed. The new versions
+are just added. After a while, megabytes of outdated packages accumulate on disk.
+To remove outdated packages:
+```
+brew cleanup
+```
+
+To uninstall TSDuck:
+```
+brew uninstall tsduck
+```
