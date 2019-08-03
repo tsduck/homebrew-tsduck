@@ -15,7 +15,7 @@ class Tsduck < Formula
 
   def install
     system "make", "NOTEST=true"
-    system "make", "install", "install-devel", "SYSPREFIX=#{prefix}"
+    system "make", "NOTEST=true", "install", "install-devel", "SYSPREFIX=#{prefix}"
   end
 
   test do
