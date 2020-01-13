@@ -12,6 +12,7 @@ class Tsduck < Formula
   depends_on "gnu-sed" => :build
   depends_on "grep" => :build
   depends_on "dos2unix" => :build
+  depends_on "srt" => :build
 
   def install
     system "make", "NOTEST=true"
