@@ -8,7 +8,6 @@ class Tsduck < Formula
   sha256 "f4ba2e95b5c0b2472d0de52da9a2252245a506ec8ca068b34153c8aa879c3293"
 
   depends_on "pcsc-lite"
-  depends_on "cppunit" => :build
   depends_on "gnu-sed" => :build
   depends_on "grep" => :build
   depends_on "dos2unix" => :build
