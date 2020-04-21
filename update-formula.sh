@@ -14,12 +14,13 @@ FORMULA="$SCRIPTDIR/tsduck.rb"
 [[ -s "$FORMULA" ]] || error "formula file not found: $FORMULA"
 
 # Get the tag of the most recent release in the tsduck repository.
-TAG=$(curl -s https://api.github.com/repos/tsduck/tsduck/releases/latest |
-          grep '"tag_name":' |
-          head -1 |
-          sed -e 's/.*: *"//' -e 's/".*//')
+TAG=$(curl -s https://api.github.com/repos/tsduck/tsduck/releases/latest | jq -r '.tag_name?')
+
+# Check that the tag value looks good.
 [[ -n "$TAG" ]] || error "no tag found for latest tsduck release"
 [[ $TAG = v* ]] || errro "suspect tag '$TAG', should be 'vX.Y-YYYYMMDD'"
+
+# Extract the version number from the tag.
 VERSION=${TAG/v/}
 info "version: $VERSION"
 
