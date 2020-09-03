@@ -3,9 +3,9 @@ class Tsduck < Formula
   desc "MPEG Transport Stream Toolkit"
   homepage "https://tsduck.github.io/"
 
-  version "3.22-1953"
-  url "https://github.com/tsduck/tsduck/archive/v3.22-1953.tar.gz"
-  sha256 "375e7e446cba05f9fb9b9d6e22938c786eb10dfe95fc85013eeb267e523c5ed1"
+  version "3.23-1965"
+  url "https://github.com/tsduck/tsduck/archive/v3.23-1965.tar.gz"
+  sha256 "b0b717714ee5b5d9c554169501b002ab34bec7586ae9561fe2728244a39b886c"
 
   depends_on "pcsc-lite"
   depends_on "gnu-sed" => :build
