@@ -5,7 +5,7 @@ class Tsduck < Formula
 
   version "3.25-2237"
   url "https://github.com/tsduck/tsduck/archive/v3.25-2237.tar.gz"
-  sha256 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  sha256 "f2c1c86da32b625ef723c0c33090718926767d44db406e655a95322934eaa195"
 
   depends_on "pcsc-lite"
   depends_on "gnu-sed" => :build
@@ -15,11 +15,11 @@ class Tsduck < Formula
 
   def install
     system "make", "NOTEST=true"
-    system "make", "NOTEST=true", "install", "install-devel", "SYSPREFIX=#{prefix}"
+    system "make", "NOTEST=true", "install", "SYSPREFIX=#{prefix}"
   end
 
   test do
-    system "#{bin}/tsp", "--version"
+    system "#{bin}/tsp", "--version=all"
   end
 
 end
