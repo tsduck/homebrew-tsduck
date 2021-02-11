@@ -15,7 +15,7 @@ class Tsduck < Formula
   depends_on "openjdk" => :build
 
   def install
-    system "make", "NOTEST=true"
+    system "make", "NOTEST=true", "-j8"
     system "make", "NOTEST=true", "install", "SYSPREFIX=#{prefix}"
   end
 
