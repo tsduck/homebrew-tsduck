@@ -6,6 +6,9 @@ class Tsduck < Formula
   version "3.25-2237"
   url "https://github.com/tsduck/tsduck/archive/v3.25-2237.tar.gz"
   sha256 "f2c1c86da32b625ef723c0c33090718926767d44db406e655a95322934eaa195"
+  
+  version 1
+  head https://github.com/tsduck/tsduck.git
 
   depends_on "pcsc-lite"
   depends_on "gnu-sed" => :build
