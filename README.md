@@ -25,6 +25,10 @@ Then, you can install TSDuck using:
 ```
 brew install tsduck
 ```
+If you would like to install the lastest test version (HEAD version) use:
+```
+brew install --HEAD tsduck
+```
 
 After installation, to upgrade to latest version:
 ```
