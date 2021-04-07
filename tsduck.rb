@@ -1,7 +1,7 @@
 class Tsduck < Formula
 
   desc "MPEG Transport Stream Toolkit"
-  homepage "https://tsduck.github.io/"
+  homepage "https://tsduck.io/"
 
   version "3.25-2237"
   url "https://github.com/tsduck/tsduck/archive/v3.25-2237.tar.gz"
